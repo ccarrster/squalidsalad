@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <?php
 require_once('data.php');
 require_once('safetydata.php');
