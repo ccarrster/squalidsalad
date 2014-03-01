@@ -21,7 +21,7 @@ require_once('safetydata.php');
 		}
 	</style>
 
-	<script language="javascript" type="text/css">
+	<script language="javascript" type="text/javascript">
 		var injuryData = new Array();
 		var tips = new Array();
 		<?php
