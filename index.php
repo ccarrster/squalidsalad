@@ -4,6 +4,7 @@ require_once('safetydata.php');
 ?>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<title>
 		Squalid Salad: Age Specific Child Safety
 	</title>
