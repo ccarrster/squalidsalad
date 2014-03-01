@@ -1,7 +1,18 @@
 <?php
-$file = fopen('chirpp-schirpt-eng1.csv', 'r');
-while(($array = fgetcsv($file)) !== false){
-	var_dump($array);
+$loadedFiles = array();
+for($index = 1; $index < 8; $index++){
+	$loadedFiles[] = loadCSV('chirpp-schirpt-eng'.$index.'.csv');
+}
+var_dump($loadedFiles);
+
+function loadCSV($path){
+	$result = array();
+	$file = fopen($path, 'r');
+	while(($array = fgetcsv($file)) !== false){
+		$result[] = $array;
+	}
+	fclose($file);
+	return $result;
 }
 ?>
 
