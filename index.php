@@ -1,7 +1,8 @@
 <?php
 $file = fopen('chirpp-schirpt-eng1.csv', 'r');
-$array = fgetcsv($file);
-var_dump($array);
+while(($array = fgetcsv($file)) !== false){
+	var_dump($array);
+}
 ?>
 
  
