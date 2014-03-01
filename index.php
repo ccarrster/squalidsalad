@@ -183,7 +183,7 @@ function getPercentAgeRoom($age, $room){
 <div style="width:850px; margin:0px auto; background-color:eee;">
 	<p>If there is a current emergency call 911.</p>
 	<p>For health questions you can contact registered nurses via telephone. <a href="http://www.cwhn.ca/en/yourhealth/provincialhealthlines">http://www.cwhn.ca/en/yourhealth/provincialhealthlines</a></p>
-	<p>Here is a list of the Poison Control centres. <a href="http://www.safemedicationuse.ca/tools_resources/poison_centres.html"</p>
+	<p>Here is a list of the Poison Control centres. <a href="http://www.safemedicationuse.ca/tools_resources/poison_centres.html">http://www.safemedicationuse.ca/tools_resources/poison_centres.html</a></p>
 </div>
 <div>Chris Carr <a href="mailto:ccarrster@gmail.com">ccarrster@gmail.com</a> <a href="about.php">About</a></div>
 </body>
