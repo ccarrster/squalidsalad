@@ -6,19 +6,21 @@ require_once('data.php');
 <h1>DemoFirst - SqualidSalad</h1>
 Problem: Unintentional Injuries of Children
 <ul>
-<li>SqualidSalad provides suggestions for preventative measures to keep children safe</li>
-<li>SqualidSalad provides quick access to FirstAid information</li>
-<li>SqualidSalad provides emergency contact info, hospital and clinic locations</li>
+<li>Age Specific Home Child Proofing</li>
 </ul>
+<div><div style="float:left;"><img src="age06.jpg"/><div>0-6 Months</div></div><div style="float:left;"><img src="age612.jpg"/><div>6-12 Months</div></div><div style="float:left;"><img src="age13.jpg"/><div>1-3 Years</div></div><div style="float:left;"><img src="age35.jpg"/><div>3-5 Years</div></div><div style="float:left;"><img src="age5p.jpg"/><div>5+ Years</div></div></div>
+<div style="clear:both;"></div>
+<div><div style="float:left;"><img src="bedroom.jpg"/><div>Bedroom</div></div><div style="float:left;"><img src="bathroom.jpg"/><div>Bathroom</div></div><div style="float:left;"><img src="kitchen.jpg"/><div>Kitchen</div></div><div style="float:left;"><img src="outdoors.jpg"/><div>Outdoors</div></div><img src="livingroom.jpg"/><div>Living room</div></div></div>
+<div style="clear:both;"></div>
 <form method='post' action="prevent.php">
 	<div>
 	Age
 	<select name="age">
-<?php
-for($ageIndex = 1; $ageIndex < 6; $ageIndex++){
-	echo('<option value="'.$ageIndex.'">'.$loadedFiles[6][3][$ageIndex].'</option>');
-}
-?>
+		<option value="0-6 M">0-6 M</option>
+		<option value="6-11 M">6-11 M</option>
+		<option value="1-3 Y">1-3 Y</option>
+		<option value="3-5 Y">3-5 Y</option>
+		<option value="5+ Y">5+ Y</option>
 	</select>
 	</div>
 
@@ -26,7 +28,7 @@ for($ageIndex = 1; $ageIndex < 6; $ageIndex++){
 	Area of activity
 		<?php
 		$rooms = array();
-		$roomLine = 4;
+		$roomLine = 5;
 		while(($roomName = $loadedFiles[3][$roomLine][0]) != 'Total'){
 			$theRoom = array();
 			$theRoom['id'] = $roomLine;
