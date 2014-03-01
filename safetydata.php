@@ -157,12 +157,12 @@ $seasonalInfo[] = "Mittens keep fingers warmer than gloves.";
 $seasonalInfo[] = "Always dress in loose layers with a water-resistant outer layer.";
 $seasonalInfo[] = "Wear bright-coloured clothing to be easily seen.";
 $seasonalInfo[] = "Boots should be dry and not too tight.";
-$seasonalInfo[] = "Socks – one pair of socks, wool or wool blend is best. Cotton socks provide little or no insulation when wet.";
+$seasonalInfo[] = "Socks - one pair of socks, wool or wool blend is best. Cotton socks provide little or no insulation when wet.";
 $seasonalInfo[] = "Remove drawstrings, cords and scarves. These can be strangulation hazards. Instead, choose tubular neck warmers.";
 $seasonalInfo[] = "Change out of wet clothes quickly.";
-$seasonalInfo[] = "Children should be kept inside if the temperature dips below –25 C, regardless of wind chill or with wind chill below –28 C regardless of temperature.";
-$seasonalInfo[] = "At –28 C, exposed skin can freeze in minutes.";
-$seasonalInfo[] = "Frostbite occurs when the skin becomes frozen generally at temperatures of – 4 C or below.";
+$seasonalInfo[] = "Children should be kept inside if the temperature dips below -25 C, regardless of wind chill or with wind chill below -28 C regardless of temperature.";
+$seasonalInfo[] = "At -28 C, exposed skin can freeze in minutes.";
+$seasonalInfo[] = "Frostbite occurs when the skin becomes frozen generally at temperatures of - 4 C or below.";
 $seasonalInfo[] = "Frostbite most commonly affects the hands, feet and face.";
 $seasonalInfo[] = "If children want to build snow structures in the yard, they should not make roofs or form a tunnel that could collapse on them. Encourage them to have fun by being creative—perhaps they could make a house with walls (instead of a ceiling) and fill it with snow furniture.";
 $seasonalInfo[] = "Active supervision is important when young children are playing outside in the snow. School-aged children should play outside with a friend who could call for help if a situation arose.";
@@ -208,7 +208,7 @@ $livingRoom[] = "Make sure to send in the registration card, or register toys an
 $livingRoom[] = "If you are searching for second hand toddler toys and supplies, make sure each item has all parts, pieces, and the instructions before you buy. If anything is missing when you bring it home, you can call the manufacturer for replacement parts, including instructions.";
 $livingRoom[] = "Keep your living room and hallways free of clutter. You or a visitor is less likely to trip and fall while carrying your toddler, if your floors are clear.";
 $livingRoom[] = "Toddlers who are learning to walk and climb are at risk for being crushed by falling furniture. When learning to walk, they may pull on or climb on furniture or shelves to help themselves get up. Make sure to secure book shelves to the wall, so that your toddler can not pull it over on herself.";
-$livingRoom[] = "The TV should be on a stand or furniture that is made for this purpose, putting the TV as low down and as far back on the stand as possible. Some TVs can be mounted on the wall – this makes it out of reach of your toddler and safely screwed in to the wall.";
+$livingRoom[] = "The TV should be on a stand or furniture that is made for this purpose, putting the TV as low down and as far back on the stand as possible. Some TVs can be mounted on the wall - this makes it out of reach of your toddler and safely screwed in to the wall.";
 
 $categories['Living Room'] = $livingRoom;
 
@@ -238,7 +238,7 @@ $categories['Outdoor Safety'] = $seasonalInfo;
 $kitchen = array();
 
 $kitchen[] = "It is important to know that your preschooler might think he is a big kid now. He thinks he can do almost everything as well as you can. Make believe play and pretending to do adult things like cooking and cleaning can put a preschooler at more risk for injury, especially in the kitchen. Allowing your preschooler to help you in the kitchen makes him confident, and helps you stay close to supervise him too.";
-$kitchen[] = "Close supervision is still the best way to keep your preschool child safe from injury in the kitchen. Talk about safety rules in the kitchen, like playing away from the stove and leaving sharp knives for parents to use. Talk about safety and how important it is to ask before eating or drinking anything – things in the kitchen could be food or could be poison.";
+$kitchen[] = "Close supervision is still the best way to keep your preschool child safe from injury in the kitchen. Talk about safety rules in the kitchen, like playing away from the stove and leaving sharp knives for parents to use. Talk about safety and how important it is to ask before eating or drinking anything - things in the kitchen could be food or could be poison.";
 $kitchen[] = "Talking about safety rules when your child is a preschooler will help him learn the importance of safety, but he might not be ready to understand or act on safety rules. Stay close by to help keep your preschooler safe from injuries.";
 $kitchen[] = "Many kitchen injuries happen because a preschooler has pulled something hot, heavy, or sharp down from a counter or table. Store knives and other tools up high, and in a cupboard that can lock.";
 $kitchen[] = "Make sure cords and hot food and drink are away from the edge of counters and tables, and that foods for your preschooler are not too hot.";
@@ -257,7 +257,7 @@ $bathroom = array();
 
 $bathroom[] = "Bathroom time can be safer by making a few changes and staying close to your preschooler.";
 $bathroom[] = "Make sure her bathwater is not too hot. It should be just warm to you.";
-$bathroom[] = "It can be dangerous to leave your child alone in the bath tub – even with siblings. The older child might still not know what to do in an emergency. It is important to stay in the bathroom at all times when your child is in the tub.";
+$bathroom[] = "It can be dangerous to leave your child alone in the bath tub - even with siblings. The older child might still not know what to do in an emergency. It is important to stay in the bathroom at all times when your child is in the tub.";
 $bathroom[] = "Clean up drips and spills right away when they happen, so you and your preschooler are less likely to slip or fall.";
 
 $categories['Bathroom'] = $bathroom;
@@ -266,7 +266,7 @@ $livingRoom = array();
 
 $livingRoom[] = "If you are searching for second hand toddler toys and supplies, make sure each item has all parts, pieces, and the instructions before you buy. If anything is missing when you bring it home, you can call the manufacturer for replacement parts, including instructions.";
 $livingRoom[] = "Climbing children are at risk for being crushed by falling furniture. Keep items that you don't want your child to have, out of sight. An item on a high shelf can be tempting and preschoolers are very good climbers. Make sure to secure shelves to the wall, so that your child can not pull it over on herself.";
-$livingRoom[] = "The TV should be on a stand or furniture that is made for this purpose, putting the TV as low down and as far back on the stand as possible. Some TVs can be mounted on the wall – this makes it out of reach of your child and safely screwed in to the wall.";
+$livingRoom[] = "The TV should be on a stand or furniture that is made for this purpose, putting the TV as low down and as far back on the stand as possible. Some TVs can be mounted on the wall - this makes it out of reach of your child and safely screwed in to the wall.";
 
 $categories['Living Room'] = $livingRoom;
 
@@ -316,7 +316,7 @@ $categories['Bathroom'] = $bathroom;
 $livingRoom = array();
 
 $livingRoom[] = "Climbing children are at risk for being crushed by falling furniture. Keep items that you don't want your child to have, out of sight. An item on a high shelf can be tempting and children are very good climbers. Make sure to secure shelves to the wall, so that your child can not pull it over on herself.";
-$livingRoom[] = "The TV should be on a stand or furniture that is made for this purpose, putting the TV as low down and as far back on the stand as possible. Some TVs can be mounted on the wall – this makes it out of reach of your child and safely screwed in to the wall.";
+$livingRoom[] = "The TV should be on a stand or furniture that is made for this purpose, putting the TV as low down and as far back on the stand as possible. Some TVs can be mounted on the wall - this makes it out of reach of your child and safely screwed in to the wall.";
 
 $categories['Living Room'] = $livingRoom;
 
