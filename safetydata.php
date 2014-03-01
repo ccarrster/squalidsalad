@@ -138,6 +138,121 @@ $safetyAgeInfo2['categories'] = $categories;
 
 $safetyData[] = $safetyAgeInfo2;
 
+//************
+
+$safetyAgeInfo3 = array();
+
+$safetyAgeInfo3['age'] = '1-3 Y';
+
+$categories = array();
+
+$seasonalInfo = array();
+
+
+$categories['Outdoor Safety'] = $seasonalInfo;
+
+$kitchen = array();
+
+
+$categories['Kitchen'] = $kitchen;
+
+$bedroom = array();
+
+
+$categories['Bedroom'] = $bedroom;
+
+$bathroom = array();
+
+
+$categories['Bathroom'] = $bathroom;
+
+$livingRoom = array();
+
+
+
+$categories['Living Room'] = $livingRoom;
+
+$safetyAgeInfo3['categories'] = $categories;
+
+$safetyData[] = $safetyAgeInfo3;
+
+
+//************
+
+$safetyAgeInfo4 = array();
+
+$safetyAgeInfo4['age'] = '3-5 Y';
+
+$categories = array();
+
+$seasonalInfo = array();
+
+
+$categories['Outdoor Safety'] = $seasonalInfo;
+
+$kitchen = array();
+
+
+$categories['Kitchen'] = $kitchen;
+
+$bedroom = array();
+
+
+$categories['Bedroom'] = $bedroom;
+
+$bathroom = array();
+
+
+$categories['Bathroom'] = $bathroom;
+
+$livingRoom = array();
+
+
+
+$categories['Living Room'] = $livingRoom;
+
+$safetyAgeInfo4['categories'] = $categories;
+
+$safetyData[] = $safetyAgeInfo4;
+
+
+//************
+
+$safetyAgeInfo5 = array();
+
+$safetyAgeInfo5['age'] = '5+ Y';
+
+$categories = array();
+
+$seasonalInfo = array();
+
+
+$categories['Outdoor Safety'] = $seasonalInfo;
+
+$kitchen = array();
+
+
+$categories['Kitchen'] = $kitchen;
+
+$bedroom = array();
+
+
+$categories['Bedroom'] = $bedroom;
+
+$bathroom = array();
+
+
+$categories['Bathroom'] = $bathroom;
+
+$livingRoom = array();
+
+
+
+$categories['Living Room'] = $livingRoom;
+
+$safetyAgeInfo5['categories'] = $categories;
+
+$safetyData[] = $safetyAgeInfo5;
 /*
 1-3
 
