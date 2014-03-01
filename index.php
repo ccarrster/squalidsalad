@@ -95,11 +95,15 @@ require_once('safetydata.php');
 		}
 
 		function getTipsFor(age, room){
-			var result = '<ul>';
+			var result = '<ol style="padding:5px;">';
 			for(var i = 0; i < tips[age][room].length; i++){
-					result += '<li>' + tips[age][room][i] + '</li>';
+					var color = 'ddd';
+					if(i % 2 == 0){
+						color = 'ccc';
+					}
+					result += '<li style="background-color:'+color+';">' + tips[age][room][i] + '</li>';
 			}
-			result += '</ul>';
+			result += '</ol>';
 			return result;
 		}
 
@@ -149,38 +153,39 @@ function getPercentAgeRoom($age, $room){
 
 </head>
 <body>
-<h1>SqualidSalad</h1>
-<ul>
-<li>Age Specific Home Child Safety</li>
-</ul>
-<div>
+<div style="text-align:center; background-color:eee; width:850px; margin:0px auto;">
+<h1>Squalid Salad</h1>
+<h2>Combining age specific injuries location data with preventative advice.</h2>
+</div>
+
+<div style="width:850px; margin:0px auto; background-color:eee;">
 	<ol>
 		<li>Choose an age group to see how often injuries happen in each area of your home</li>
 		<li>Then choose an area of your home to get tips on how to make the area safer for the selected age group</li>
 	</ol>
 </div>
-<div>
-	<div id="age0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 0);"><img class="shadowy" src="age06.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">0-6 Months<img style="padding:2px;" src="arrow.png"/></div></div>
-	<div id="age1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 1);"><img class="shadowy" src="age612.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">6-12 Months<img style="padding:2px;" src="arrow.png"/></div></div>
-	<div id="age2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 2);"><img class="shadowy" src="age13.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">1-3 Years<img style="padding:2px;" src="arrow.png"/></div></div>
-	<div id="age3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 3);"><img class="shadowy" src="age35.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">3-5 Years<img style="padding:2px;" src="arrow.png"/></div></div>
-	<div id="age4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(1, 4);"><img class="shadowy" src="age5p.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">5+ Years<img style="padding:2px;" src="arrow.png"/></div></div>
+<div style="width:850px; margin:0px auto;">
+	<div id="age0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 0);"><img class="shadowy" style="width:155px; height:288px;" src="age06.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">0-6 Months<img style="padding:2px;" src="arrow.png"/></div></div>
+	<div id="age1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 1);"><img class="shadowy" style="width:155px; height:288px;" src="age612.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">6-12 Months<img style="padding:2px;" src="arrow.png"/></div></div>
+	<div id="age2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 2);"><img class="shadowy" style="width:155px; height:288px;" src="age13.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">1-3 Years<img style="padding:2px;" src="arrow.png"/></div></div>
+	<div id="age3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 3);"><img class="shadowy" style="width:155px; height:288px;" src="age35.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">3-5 Years<img style="padding:2px;" src="arrow.png"/></div></div>
+	<div id="age4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(1, 4);"><img class="shadowy" style="width:155px; height:288px;" src="age5p.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">5+ Years<img style="padding:2px;" src="arrow.png"/></div></div>
 </div>
 <div style="clear:both;"></div>
 
-<div>
-	<div id="room0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(0);"><img class="shadowy" src="outdoors.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Outdoors<img style="padding:2px;" src="arrow.png"/></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent3"></div></div>
-	<div id="room1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(1);"><img class="shadowy" src="kitchen.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Kitchen<img style="padding:2px;" src="arrow.png"/></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent2"></div></div>
-	<div id="room2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(2);"><img class="shadowy" src="bedroom.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Bedroom<img style="padding:2px;" src="arrow.png"/></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent0"></div></div>
-	<div id="room3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(3);"><img class="shadowy" src="bathroom.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Bathroom<img style="padding:2px;" src="arrow.png"/></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent1"></div></div>
-	<div id="room4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(4);"><img class="shadowy" src="livingroom.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Living room<img style="padding:2px;" src="arrow.png"/></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent4"></div></div>
+<div style="width:850px; margin:0px auto;">
+	<div id="room0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(0);"><img class="shadowy" style="width:155px; height:90px;" src="outdoors.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Outdoors<img style="padding:2px;" src="arrow.png"/></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent3"></div></div>
+	<div id="room1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(1);"><img class="shadowy" style="width:155px; height:90px;" src="kitchen.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Kitchen<img style="padding:2px;" src="arrow.png"/></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent2"></div></div>
+	<div id="room2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(2);"><img class="shadowy" style="width:155px; height:90px;" src="bedroom.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Bedroom<img style="padding:2px;" src="arrow.png"/></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent0"></div></div>
+	<div id="room3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(3);"><img class="shadowy" style="width:155px; height:90px;" src="bathroom.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Bathroom<img style="padding:2px;" src="arrow.png"/></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent1"></div></div>
+	<div id="room4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(4);"><img class="shadowy" style="width:155px; height:90px;" src="livingroom.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Living room<img style="padding:2px;" src="arrow.png"/></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent4"></div></div>
 </div>
 <div style="clear:both;"></div>
-<div>
-Safety Tips <span id="ageTips"></span>
+<div style="width:850px; margin:0px auto; background-color:eee;">
+<h2 style="text-align:center">Safety Tips <span id="ageTips"></span></h2>
 </div>
-<div id="tips"></div>
-<div>Chris Carr <a href="mailto:ccarrster@gmail.com"/>ccarrster@gmail.com</a></div>
+<div style="width:850px; margin:0px auto; background-color:eee;" id="tips"></div>
+<div>Chris Carr <a href="mailto:ccarrster@gmail.com"/>ccarrster@gmail.com</a> <a href="about.php">About</a></div>
 </body>
 </html>
 
