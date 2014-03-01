@@ -15,7 +15,7 @@ $seasonalInfo[] = "Sunscreen and insect repellent containing DEET is not meant f
 $seasonalInfo[] = "Never leave your baby in a hot car, even for a few minutes: the temperature can reach 40 degrees in only a few minutes and heat exhaustion in newborns can be fatal very quickly.";
 $seasonalInfo[] = "Life jackets are sized by weight and are not available for babies lighter than 20 pounds.  Smaller babies should be held by an adult at all times in the water. Click here for more information from the Canadian Red Cross on life jackets and PFDs for children.";
 $seasonalInfo[] = "Keep at least one hand on your baby if you choose to use floaters or water toys.";
-$seasonalInfo[] = "Summer heat can be dangerous for newborns, as their little bodies do not respond to heat in the same way an adult does. They do not sweat in the same way and really begin to suffer in temperatures above 37°C.";
+$seasonalInfo[] = "Summer heat can be dangerous for newborns, as their little bodies do not respond to heat in the same way an adult does. They do not sweat in the same way and really begin to suffer in temperatures above 37C.";
 $seasonalInfo[] = "Make sure your driveway, steps, or stairs are clear of snow and ice. You will be less likely to slip or fall while carrying your newborn if you are able to walk safely.";
 
 $categories['Outdoor Safety'] = $seasonalInfo;
@@ -151,7 +151,7 @@ $seasonalInfo = array();
 $seasonalInfo[] = "Make sure your toddler is protected from the sun. Read the label on sunscreen, and avoid putting sunscreen on your toddlers hands as they might end up in his mouth. Choose long sleeves and a sun hat, and stay in the shade when the sun is the strongest.";
 $seasonalInfo[] = "Always follow the label on bug spray. Some bug spray should not be used for toddlers. Avoid putting bug spray on his face and hands, as they could end up in his mouth.";
 $seasonalInfo[] = "Toddlers should always wear lifejackets or PFD's when playing in or around water like a pool, lake, or the ocean. An adult should be within arms reach of children under 5 while they are in or near the water. Click here for more information from the Red Cross on life jackets and PFDs for children.";
-$seasonalInfo[] = "Summer heat can be dangerous for toddlers, as their little bodies do not respond to heat in the same way an adult does. They do not sweat in the same way and really begin to suffer in temperatures above 37°C.";
+$seasonalInfo[] = "Summer heat can be dangerous for toddlers, as their little bodies do not respond to heat in the same way an adult does. They do not sweat in the same way and really begin to suffer in temperatures above 37C.";
 $seasonalInfo[] = "Hats should be warm, close fitting and cover the earlobes";
 $seasonalInfo[] = "Mittens keep fingers warmer than gloves.";
 $seasonalInfo[] = "Always dress in loose layers with a water-resistant outer layer.";
