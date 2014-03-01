@@ -15,6 +15,7 @@
 <p>Hosting: <a href="http://digitalocean.com">digitalocean.com</a></p>
 <p>url: <a href="http://107.170.48.43/squalidsalad/">http://107.170.48.43/squalidsalad/</a></p>
 <p><a href="mailto:ccarrster@gmail.com">ccarrster@gmail.com</a></p>
+<p>Checkout my developer portfolio <a href="http://usedbabies.ca">usedbabies.ca</a></p>
 <p><a href="index.php">back</a></p>
 </body>
 </html>
