@@ -5,6 +5,7 @@ require_once('safetydata.php');
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="iso-8859-1">
 	<title>
 		Squalid Salad: Age Specific Child Safety
 	</title>
@@ -169,7 +170,7 @@ function getPercentAgeRoom($age, $room){
 	<div id="age0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 0);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age06.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">0-6 Months<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
 	<div id="age1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 1);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age612.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">6-12 Months<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
 	<div id="age2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 2);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age13.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">1-3 Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
-	<div id="age3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 3);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age35.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">3-5 Years<img  alt="arrow"style="padding:2px;" src="arrow.png"></div></div>
+	<div id="age3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 3);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age35.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">3-5 Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
 	<div id="age4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(1, 4);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age5p.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">5+ Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
 </div>
 <div style="clear:both;"></div>
@@ -186,7 +187,7 @@ function getPercentAgeRoom($age, $room){
 <h2 style="text-align:center">Safety Tips <span id="ageTips"></span></h2>
 </div>
 <div style="width:850px; margin:0px auto; background-color:eee;" id="tips"></div>
-<div>Chris Carr <a href="mailto:ccarrster@gmail.com"/>ccarrster@gmail.com</a> <a href="about.php">About</a></div>
+<div>Chris Carr <a href="mailto:ccarrster@gmail.com">ccarrster@gmail.com</a> <a href="about.php">About</a></div>
 </body>
 </html>
 
