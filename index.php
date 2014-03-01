@@ -26,13 +26,6 @@ require_once('safetydata.php');
 		var injuryData = new Array();
 		var tips = new Array();
 		<?php
-		/*
-		5 Bathroom
-		6 Bedroom
-		9 Kitchen
-		10 Livingroom
-		19 Garden/Yard
-		*/
 		$rooms = array(6, 5, 9, 19, 10);
 		$roomCount = 0;
 		foreach($rooms as $room){
