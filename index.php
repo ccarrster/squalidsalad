@@ -2,6 +2,7 @@
 require_once('data.php');
 require_once('safetydata.php');
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>
