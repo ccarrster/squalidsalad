@@ -72,10 +72,11 @@ require_once('safetydata.php');
 		}
 
 		function getTipsFor(age, room){
-			var result = '';
+			var result = '<ul>';
 			for(var i = 0; i < tips[age][room].length; i++){
-					result += '<div>' + tips[age][room][i] + '</div>';
+					result += '<li>' + tips[age][room][i] + '</li>';
 			}
+			result += '</ul>';
 			return result;
 		}
 
@@ -109,9 +110,22 @@ Problem: Unintentional Injuries of Children
 <ul>
 <li>Age Specific Home Child Proofing</li>
 </ul>
-<div><div style="float:left;" onclick="refreshInjuryData(0, 0);"><img src="age06.jpg"/><div>0-6 Months</div></div><div style="float:left;" onclick="refreshInjuryData(0, 1);"><img src="age612.jpg"/><div>6-12 Months</div></div><div style="float:left;" onclick="refreshInjuryData(0, 2);"><img src="age13.jpg"/><div>1-3 Years</div></div><div style="float:left;" onclick="refreshInjuryData(0, 3);"><img src="age35.jpg"/><div>3-5 Years</div></div><div style="float:left;" onclick="refreshInjuryData(1, 4);"><img src="age5p.jpg"/><div>5+ Years</div></div></div>
+<div>
+	<div style="float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 0);"><img src="age06.jpg"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">0-6 Months<img style="padding:2px;" src="arrow.png"/></div></div>
+	<div style="float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 1);"><img src="age612.jpg"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">6-12 Months<img style="padding:2px;" src="arrow.png"/></div></div>
+	<div style="float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 2);"><img src="age13.jpg"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">1-3 Years<img style="padding:2px;" src="arrow.png"/></div></div>
+	<div style="float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 3);"><img src="age35.jpg"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">3-5 Years<img style="padding:2px;" src="arrow.png"/></div></div>
+	<div style="float:left; position:relative; padding:5px;" onclick="refreshInjuryData(1, 4);"><img src="age5p.jpg"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">5+ Years<img style="padding:2px;" src="arrow.png"/></div></div>
+</div>
 <div style="clear:both;"></div>
-<div><div style="float:left;" onclick="refreshTips(0);"><img src="bedroom.jpg"/><div>Bedroom<span id="percent0"></span></div></div><div style="float:left;" onclick="refreshTips(1);"><img src="bathroom.jpg"/><div>Bathroom<span id="percent1"></span></div></div><div style="float:left;" onclick="refreshTips(2);"><img src="kitchen.jpg"/><div>Kitchen<span id="percent2"></span></div></div><div style="float:left;" onclick="refreshTips(3);"><img src="outdoors.jpg"/><div>Outdoors<span id="percent3"></span></div></div><div style="float:left;" onclick="refreshTips(4);"><img src="livingroom.jpg"/><div>Living room<span id="percent4"></span></div></div></div>
+
+<div>
+	<div style="float:left; padding:5px;" onclick="refreshTips(0);"><img src="bedroom.jpg"/><div>Bedroom<span id="percent0"></span></div></div>
+	<div style="float:left; padding:5px;" onclick="refreshTips(1);"><img src="bathroom.jpg"/><div>Bathroom<span id="percent1"></span></div></div>
+	<div style="float:left; padding:5px;" onclick="refreshTips(2);"><img src="kitchen.jpg"/><div>Kitchen<span id="percent2"></span></div></div>
+	<div style="float:left; padding:5px;" onclick="refreshTips(3);"><img src="outdoors.jpg"/><div>Outdoors<span id="percent3"></span></div></div>
+	<div style="float:left; padding:5px;" onclick="refreshTips(4);"><img src="livingroom.jpg"/><div>Living room<span id="percent4"></span></div></div>
+</div>
 <div style="clear:both;"></div>
 <div id="tips"></div>
 <div>Chris Carr <a href="mailto:ccarrster@gmail.com"/>ccarrster@gmail.com</a></div>
