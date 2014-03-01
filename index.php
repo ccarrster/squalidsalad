@@ -5,7 +5,7 @@ require_once('safetydata.php');
 <html>
 <head>
 	<title>
-		DemoFirst - SqualidSalad
+		Squalid Salad: Age Specific Child Safety
 	</title>
 	<style>
 		.shadowy{
@@ -111,11 +111,16 @@ function getPercentAgeRoom($age, $room){
 
 </head>
 <body>
-<h1>DemoFirst - SqualidSalad</h1>
-Problem: Unintentional Injuries of Children
+<h1>SqualidSalad</h1>
 <ul>
-<li>Age Specific Home Child Proofing</li>
+<li>Age Specific Home Child Safety</li>
 </ul>
+<div>
+	<ol>
+		<li>Choose an age group to see how often injuries happen in each area of your home</li>
+		<li>Then choose an area of your home to get tips on how to make the area safer for the selected age group</li>
+	</ol>
+</div>
 <div>
 	<div style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 0);"><img class="shadowy" src="age06.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">0-6 Months<img style="padding:2px;" src="arrow.png"/></div></div>
 	<div style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 1);"><img class="shadowy" src="age612.png"/><div style="position:absolute; bottom:10px; right:10px; background-color:green;">6-12 Months<img style="padding:2px;" src="arrow.png"/></div></div>
