@@ -1,6 +1,11 @@
 <?php
 ?>
+<!DOCTYPE html>
 <html>
+<head>
+	<meta charset="utf-8">
+	<title>Squalid Salad: Age Specific Child Safety - About</title>
+</head>
 <body>
 <p>Hackathon: CODE <a href="https://www.canadianopendataexperience.com/">https://www.canadianopendataexperience.com/</a></p>
 <p>Theme: Solving Problems and Increasing Productivity with <a href="http://data.gc.ca/">Open Data</a></p>
