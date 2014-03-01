@@ -7,7 +7,7 @@ require_once('safetydata.php');
 	<title>
 		Squalid Salad: Age Specific Child Safety
 	</title>
-	<style>
+	<style type="text/css">
 		.shadowy{
 			box-shadow: 4px 4px 2px #888888;
 		}
