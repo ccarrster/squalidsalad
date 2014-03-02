@@ -15,10 +15,10 @@ require_once('safetydata.php');
 		}
 
 		.hovery{
-				border:2px solid #fff;
+				border:2px solid #ffffff;
 		}
 		.hovery:hover{
-				border:2px solid #0f0;
+				border:2px solid #00ff00;
 		}
 	</style>
 
@@ -75,10 +75,10 @@ require_once('safetydata.php');
 			selectedAgeRange = ageRange;
 			for(var i = 0; i < 5; i++){
 				var ageElement = document.getElementById('age' + i);
-				ageElement.style.border = 'solid 2px fff';
+				ageElement.style.border = 'solid 2px #ffffff';
 			}
 			var ageElement = document.getElementById('age' + ageRange);
-			ageElement.style.border = 'solid 2px 00f';
+			ageElement.style.border = 'solid 2px #0000ff';
 			selectedAge = age;
 			for(i = 0; i < 5; i++){
 				element = document.getElementById('percent' + i);
@@ -92,9 +92,9 @@ require_once('safetydata.php');
 		function getTipsFor(age, room){
 			var result = '<ol style="padding:5px;">';
 			for(var i = 0; i < tips[age][room].length; i++){
-					var color = 'ddd';
+					var color = '#dddddd';
 					if(i % 2 == 0){
-						color = 'ccc';
+						color = '#cccccc';
 					}
 					result += '<li style="background-color:'+color+';">' + tips[age][room][i] + '</li>';
 			}
@@ -105,10 +105,10 @@ require_once('safetydata.php');
 		function refreshTips(roomId){
 			for(var i = 0; i < 5; i++){
 				var ageElement = document.getElementById('room' + i);
-				ageElement.style.border = 'solid 2px fff';
+				ageElement.style.border = 'solid 2px #ffffff';
 			}
 			var ageElement = document.getElementById('room' + roomId);
-			ageElement.style.border = 'solid 2px 00f';
+			ageElement.style.border = 'solid 2px #0000ff';
 			if(selectedAgeRange != null){
 				element = document.getElementById('tips');
 				element.innerHTML = getTipsFor(selectedAgeRange, roomId);
@@ -148,42 +148,43 @@ function getPercentAgeRoom($age, $room){
 
 </head>
 <body>
-<div style="text-align:center; background-color:eee; width:850px; margin:0px auto;">
+<div style="text-align:center; background-color:#eeeeee; width:850px; margin:0px auto;">
 <h1>Squalid Salad</h1>
 <h2>Combining age specific injuries location data with preventative advice.</h2>
 </div>
 
-<div style="width:850px; margin:0px auto; background-color:eee;">
+<div style="width:850px; margin:0px auto; background-color:#eeeeee;">
 	<ol>
 		<li>Choose an age group to see how often injuries happen in each area of your home</li>
 		<li>Then choose an area of your home to get tips on how to make the area safer for the selected age group</li>
 	</ol>
 </div>
 <div style="width:850px; margin:0px auto;">
-	<div id="age0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 0);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age06.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">0-6 Months<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
-	<div id="age1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 1);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age612.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">6-12 Months<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
-	<div id="age2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 2);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age13.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">1-3 Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
-	<div id="age3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 3);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age35.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">3-5 Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
-	<div id="age4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(1, 4);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age5p.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">5+ Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
+	<div id="age0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 0);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age06.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">0-6 Months<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
+	<div id="age1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 1);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age612.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">6-12 Months<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
+	<div id="age2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 2);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age13.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">1-3 Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
+	<div id="age3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 3);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age35.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">3-5 Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
+	<div id="age4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(1, 4);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age5p.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">5+ Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
 </div>
 <div style="clear:both;"></div>
 
 <div style="width:850px; margin:0px auto;">
-	<div id="room0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(0);"><img alt="outside" class="shadowy" style="width:155px; height:90px;" src="outdoors.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Outdoors<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent3"></div></div>
-	<div id="room1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(1);"><img alt="kitchen" class="shadowy" style="width:155px; height:90px;" src="kitchen.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Kitchen<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent2"></div></div>
-	<div id="room2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(2);"><img alt="bedroom" class="shadowy" style="width:155px; height:90px;" src="bedroom.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Bedroom<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent0"></div></div>
-	<div id="room3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(3);"><img alt="bathroom" class="shadowy" style="width:155px; height:90px;" src="bathroom.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Bathroom<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent1"></div></div>
-	<div id="room4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(4);"><img alt="livingroom" class="shadowy" style="width:155px; height:90px;" src="livingroom.png"><div style="position:absolute; bottom:10px; right:10px; background-color:green;">Living room<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:red; top:10px; left:10px;" id="percent4"></div></div>
+	<div id="room0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(0);"><img alt="outside" class="shadowy" style="width:155px; height:90px;" src="outdoors.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">Outdoors<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:#dc143c; top:10px; left:10px;" id="percent3"></div></div>
+	<div id="room1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(1);"><img alt="kitchen" class="shadowy" style="width:155px; height:90px;" src="kitchen.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">Kitchen<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:#dc143c; top:10px; left:10px;" id="percent2"></div></div>
+	<div id="room2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(2);"><img alt="bedroom" class="shadowy" style="width:155px; height:90px;" src="bedroom.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">Bedroom<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:#dc143c; top:10px; left:10px;" id="percent0"></div></div>
+	<div id="room3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(3);"><img alt="bathroom" class="shadowy" style="width:155px; height:90px;" src="bathroom.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">Bathroom<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:#dc143c; top:10px; left:10px;" id="percent1"></div></div>
+	<div id="room4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(4);"><img alt="livingroom" class="shadowy" style="width:155px; height:90px;" src="livingroom.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">Living room<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:#dc143c; top:10px; left:10px;" id="percent4"></div></div>
 </div>
 <div style="clear:both;"></div>
-<div style="width:850px; margin:0px auto; background-color:eee;">
+<div style="width:850px; margin:0px auto; background-color:#eeeeee;">
 <h2 style="text-align:center">Safety Tips <span id="ageTips"></span></h2>
 </div>
-<div style="width:850px; margin:0px auto; background-color:eee;" id="tips"></div>
-<div style="width:850px; margin:0px auto; background-color:eee;">
+<div style="width:850px; margin:0px auto; background-color:#eeeeee;" id="tips"></div>
+<div style="width:850px; margin:0px auto; background-color:#eeeeee;">
 	<p>If there is a current emergency call 911.</p>
-	<p>For health questions you can contact registered nurses via telephone. <a href="http://www.cwhn.ca/en/yourhealth/provincialhealthlines">http://www.cwhn.ca/en/yourhealth/provincialhealthlines</a></p>
-	<p>Here is a list of the Poison Control centres. <a href="http://www.safemedicationuse.ca/tools_resources/poison_centres.html">http://www.safemedicationuse.ca/tools_resources/poison_centres.html</a></p>
+	<p>Contact registered nurses via telephone. <a href="http://www.cwhn.ca/en/yourhealth/provincialhealthlines">http://www.cwhn.ca/en/yourhealth/provincialhealthlines</a></p>
+	<p>Poison Control centres. <a href="http://www.safemedicationuse.ca/tools_resources/poison_centres.html">http://www.safemedicationuse.ca/tools_resources/poison_centres.html</a></p>
+	<p>First aid manuals. <a href="http://firstaid-cpr.net/"/>http://firstaid-cpr.net/</a></p>
 </div>
 <div>Chris Carr <a href="mailto:ccarrster@gmail.com">ccarrster@gmail.com</a> <a href="about.php">About</a></div>
 </body>
