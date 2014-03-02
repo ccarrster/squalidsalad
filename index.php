@@ -186,7 +186,7 @@ function getPercentAgeRoom($age, $room){
 }(document, 'script', 'facebook-jssdk'));</script>
 <div style="background-color:#000000; height:61px;">
 	<div style="float:left;">
-		<img style="padding:8px;" src="code_logo.png">
+		<img style="padding:8px;" src="code_logo.png" alt="code logo">
 	</div>
 	<div style="float:left; background-color:#eeeeee; padding:6px; margin:6px;">
 		<span style="color:#663333; font-size:32px;">Squalid</span> <span style="color:#003300; font-size:32px;">Salad</span> Making your home safer.
