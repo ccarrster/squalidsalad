@@ -125,8 +125,6 @@ require_once('safetydata.php');
 				element.innerHTML = getTipsFor(selectedAgeRange, roomId);
 				var ageTipsElement = document.getElementById('ageTips');
 				ageTipsElement.innerHTML = ' for ages ' + nameForAge(selectedAgeRange) + ' in the ' + nameForRoom(roomId);
-			} else {
-				alert('Select an age range first');
 			}
 			selectedRoom = roomId;
 			var roomSelectElement = document.getElementById('roomSelect');
@@ -148,23 +146,20 @@ require_once('safetydata.php');
 		function ageSelectChange(){
 			var element = document.getElementById('ageSelect');
 			var selectedIndex = element.selectedIndex;
-			if(selectedIndex != 0){
-				var age = 0;
-				if(selectedIndex == 5){
-					age = 1;
-				}
-				refreshInjuryData(age, selectedIndex - 1);
+			var age = 0;
+			if(selectedIndex == 4){
+				age = 1;
 			}
+			refreshInjuryData(age, selectedIndex);
 		}
 
 		function roomSelectChange(){
 			var element = document.getElementById('roomSelect');
 			var selectedIndex = element.selectedIndex;
 			if(selectedIndex != 0){
-				refreshTips(selectedIndex - 1);
+				refreshTips(selectedIndex);
 			}
 		}
-
 	</script>
 <?php
 
@@ -180,7 +175,7 @@ function getPercentAgeRoom($age, $room){
 
 
 </head>
-<body style="font-family:Arial; font-weight: bold; font-size: 14px;">
+<body style="font-family:Arial; font-weight: bold; font-size: 14px;" onload="refreshInjuryData(0, 0); refreshTips(0);">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -222,7 +217,6 @@ function getPercentAgeRoom($age, $room){
 		<div>
 		Age Range
 			<select id="ageSelect" onchange="ageSelectChange();">
-				<option>Select Age Range</option>
 				<option value="0">0-6 Months</option>
 				<option value="1">6-12 Months</option>
 				<option value="2">1-3 Years</option>
@@ -233,7 +227,6 @@ function getPercentAgeRoom($age, $room){
 		<div>
 			House Area
 			<select id="roomSelect" onchange="roomSelectChange();">
-				<option>Select a Room</option>
 				<option value="0">Outdoors</option>
 				<option value="1">Kitchen</option>
 				<option value="2">Bedroom</option>
