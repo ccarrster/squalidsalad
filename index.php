@@ -96,6 +96,8 @@ require_once('safetydata.php');
 			if(selectedRoom != null){
 				refreshTips(selectedRoom);
 			}
+			var roomSelectElement = document.getElementById('ageSelect');
+			roomSelectElement.selectedIndex = (ageRange + 1);
 		}
 
 		function getTipsFor(age, room){
@@ -127,6 +129,8 @@ require_once('safetydata.php');
 				alert('Select an age range first');
 			}
 			selectedRoom = roomId;
+			var roomSelectElement = document.getElementById('roomSelect');
+			roomSelectElement.selectedIndex = (roomId + 1);
 		}
 
 		var ageNames = new Array('0-6 Months', '6-12 Months', '1-3 Years', '3-5 Years', '5+ Years');
@@ -139,6 +143,26 @@ require_once('safetydata.php');
 
 		function nameForRoom(roomId){
 			return roomNames[roomId];
+		}
+
+		function ageSelectChange(){
+			var element = document.getElementById('ageSelect');
+			var selectedIndex = element.selectedIndex;
+			if(selectedIndex != 0){
+				var age = 0;
+				if(selectedIndex == 5){
+					age = 1;
+				}
+				refreshInjuryData(age, selectedIndex - 1);
+			}
+		}
+
+		function roomSelectChange(){
+			var element = document.getElementById('roomSelect');
+			var selectedIndex = element.selectedIndex;
+			if(selectedIndex != 0){
+				refreshTips(selectedIndex - 1);
+			}
 		}
 
 	</script>
@@ -197,7 +221,7 @@ function getPercentAgeRoom($age, $room){
 	<form>
 		<div>
 		Age Range
-			<select id="ageSelect" onchange="">
+			<select id="ageSelect" onchange="ageSelectChange();">
 				<option>Select Age Range</option>
 				<option value="0">0-6 Months</option>
 				<option value="1">6-12 Months</option>
@@ -208,7 +232,7 @@ function getPercentAgeRoom($age, $room){
 		</div>
 		<div>
 			House Area
-			<select id="roomSelect" onchange="">
+			<select id="roomSelect" onchange="roomSelectChange();">
 				<option>Select a Room</option>
 				<option value="0">Outdoors</option>
 				<option value="1">Kitchen</option>
