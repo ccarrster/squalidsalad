@@ -157,6 +157,14 @@ function getPercentAgeRoom($age, $room){
 
 </head>
 <body style="font-family:Arial; font-weight: bold; font-size: 14px;">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=266776246763500";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 <div style="text-align:center;" class="fadey">
 <h1><span style="color:#663333;">Squalid</span> <span style="color:#003300;">Salad</span></h1>
 <h2>Making your home safer.</h2>
@@ -187,6 +195,12 @@ function getPercentAgeRoom($age, $room){
 <div style="clear:both;"></div>
 <div class="fadey">
 <h2 style="text-align:center">Safety Tips <span id="ageTips"></span></h2>
+	<div><a href="mailto:ccarrster@gmail.com">Share some safety tips</a></div>
+	<div class="fb-like" data-href="http://107.170.48.43/squalidsalad/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+	<div>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://107.170.48.43/squalidsalad/" data-via="MoonScientist" data-hashtags="CODE2014">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	</div>
 </div>
 <div class="fadey" id="tips" style="line-height: 18px;"></div>
 <div class="fadey" style="line-height: 18px;">
@@ -195,7 +209,7 @@ function getPercentAgeRoom($age, $room){
 	<p>Poison Control centres. <a href="http://www.safemedicationuse.ca/tools_resources/poison_centres.html">http://www.safemedicationuse.ca/tools_resources/poison_centres.html</a></p>
 	<p>First aid manuals. <a href="http://firstaid-cpr.net/">http://firstaid-cpr.net/</a></p>
 </div>
-<div>Chris Carr <a href="mailto:ccarrster@gmail.com">ccarrster@gmail.com</a> <a href="about.php">About</a></div>
+<div class="fadey">Chris Carr <a href="mailto:ccarrster@gmail.com">ccarrster@gmail.com</a> <a href="about.php">About</a></div>
 </body>
 </html>
 
