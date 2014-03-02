@@ -190,9 +190,37 @@ function getPercentAgeRoom($age, $room){
 	<div id="room1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(1);"><div style="position:absolute; bottom:6px; right:125px;" ><img alt="roundy" src="pillleft.png"/></div><img alt="kitchen" class="shadowy" style="width:155px; height:90px;" src="kitchen.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">Kitchen</div><div style="position:absolute; color:#ffffff; background-color:#663333; top:10px; left:10px;" id="percent2"></div><div style="position:absolute; bottom:6px; right:1px;" ><img alt="roundy" src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
 	<div id="room2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(2);"><div style="position:absolute; bottom:6px; right:125px;" ><img alt="roundy" src="pillleft.png"/></div><img alt="bedroom" class="shadowy" style="width:155px; height:90px;" src="bedroom.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">Bedroom</div><div style="position:absolute; color:#ffffff; background-color:#663333; top:10px; left:10px;" id="percent0"></div><div style="position:absolute; bottom:6px; right:1px;" ><img alt="roundy" src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
 	<div id="room3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(3);"><div style="position:absolute; bottom:6px; right:125px;" ><img alt="roundy" src="pillleft.png"/></div><img alt="bathroom" class="shadowy" style="width:155px; height:90px;" src="bathroom.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">Bathroom</div><div style="position:absolute; color:#ffffff; background-color:#663333; top:10px; left:10px;" id="percent1"></div><div style="position:absolute; bottom:6px; right:1px;" ><img alt="roundy" src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
-	<div id="room4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(4);"><div style="position:absolute; bottom:6px; right:125px;" ><img alt="roundy" src="pillleft.png"/></div><img alt="livingroom" class="shadowy" style="width:155px; height:90px;" src="livingroom.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">Living room</div><div style="position:absolute; color:#ffffff; background-color:#663333; top:10px; left:10px;" id="percent4"></div><div style="position:absolute; bottom:6px; right:1px;" ><img alt="roundy" src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
+	<div id="room4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(4);"><div style="position:absolute; bottom:6px; right:125px;" ><img alt="roundy" src="pillleft.png"/></div><img alt="livingroom" class="shadowy" style="width:155px; height:90px;" src="livingroom.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">Living Room</div><div style="position:absolute; color:#ffffff; background-color:#663333; top:10px; left:10px;" id="percent4"></div><div style="position:absolute; bottom:6px; right:1px;" ><img alt="roundy" src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
 </div>
 <div style="clear:both;"></div>
+<div class="fadey">
+	<form>
+		<div>
+		Age Range
+			<select id="ageSelect" onchange="">
+				<option>Select Age Range</option>
+				<option value="0">0-6 Months</option>
+				<option value="1">6-12 Months</option>
+				<option value="2">1-3 Years</option>
+				<option value="3">3-5 Years</option>
+				<option value="4">5+ Years</option>
+			</select>
+		</div>
+		<div>
+			House Area
+			<select id="roomSelect" onchange="">
+				<option>Select a Room</option>
+				<option value="0">Outdoors</option>
+				<option value="1">Kitchen</option>
+				<option value="2">Bedroom</option>
+				<option value="3">Bathroom</option>
+				<option value="4">Living Room</option>
+			</select>
+		</div>
+	</form>
+</div>
+
+
 <div class="fadey">
 <h2 style="text-align:center">Safety Tips <span id="ageTips"></span></h2>
 	<div><a href="mailto:ccarrster@gmail.com">Share some safety tips</a></div>

@@ -8,6 +8,7 @@
 </head>
 <body>
 <p>Hackathon: CODE <a href="https://www.canadianopendataexperience.com/">https://www.canadianopendataexperience.com/</a></p>
+<p><img src="codeslide.jpg"></p>
 <p>Theme: Solving Problems and Increasing Productivity with <a href="http://data.gc.ca/">Open Data</a></p>
 <p>Solution: The goal of the app is to reduce unintentional injuries with information for parents and guardians. For every injury reduced is one less trip to the hospital.</p>
 <p>Team: Demo First - Chris Carr</p>
@@ -21,6 +22,7 @@
 <p>url: <a href="http://107.170.48.43/squalidsalad/">http://107.170.48.43/squalidsalad/</a></p>
 <p><a href="mailto:ccarrster@gmail.com">ccarrster@gmail.com</a></p>
 <p>Checkout my developer portfolio <a href="http://usedbabies.ca">usedbabies.ca</a></p>
+<p><img src="queen.jpg" style="width:850px;"></p>
 <p><a href="index.php">back</a></p>
 </body>
 </html>
