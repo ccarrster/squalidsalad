@@ -184,7 +184,7 @@ function getPercentAgeRoom($age, $room){
 	<p>If there is a current emergency call 911.</p>
 	<p>Contact registered nurses via telephone. <a href="http://www.cwhn.ca/en/yourhealth/provincialhealthlines">http://www.cwhn.ca/en/yourhealth/provincialhealthlines</a></p>
 	<p>Poison Control centres. <a href="http://www.safemedicationuse.ca/tools_resources/poison_centres.html">http://www.safemedicationuse.ca/tools_resources/poison_centres.html</a></p>
-	<p>First aid manuals. <a href="http://firstaid-cpr.net/"/>http://firstaid-cpr.net/</a></p>
+	<p>First aid manuals. <a href="http://firstaid-cpr.net/">http://firstaid-cpr.net/</a></p>
 </div>
 <div>Chris Carr <a href="mailto:ccarrster@gmail.com">ccarrster@gmail.com</a> <a href="about.php">About</a></div>
 </body>
