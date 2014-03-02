@@ -156,13 +156,13 @@ function getPercentAgeRoom($age, $room){
 
 
 </head>
-<body>
+<body style="font-family:Arial; font-weight: bold; font-size: 14px;">
 <div style="text-align:center;" class="fadey">
 <h1><span style="color:#663333;">Squalid</span> <span style="color:#003300;">Salad</span></h1>
-<h2>Combining age specific injuries location data with preventative advice.</h2>
+<h2>Making your home safer.</h2>
 </div>
 
-<div class="fadey">
+<div class="fadey" style="line-height: 18px;">
 	<ol>
 		<li>Choose an age group to see how often injuries happen in each area of your home</li>
 		<li>Then choose an area of your home to get tips on how to make the area safer for the selected age group</li>
@@ -188,8 +188,8 @@ function getPercentAgeRoom($age, $room){
 <div class="fadey">
 <h2 style="text-align:center">Safety Tips <span id="ageTips"></span></h2>
 </div>
-<div class="fadey" id="tips"></div>
-<div class="fadey">
+<div class="fadey" id="tips" style="line-height: 18px;"></div>
+<div class="fadey" style="line-height: 18px;">
 	<p>If there is a current emergency call 911.</p>
 	<p>Contact registered nurses via telephone. <a href="http://www.cwhn.ca/en/yourhealth/provincialhealthlines">http://www.cwhn.ca/en/yourhealth/provincialhealthlines</a></p>
 	<p>Poison Control centres. <a href="http://www.safemedicationuse.ca/tools_resources/poison_centres.html">http://www.safemedicationuse.ca/tools_resources/poison_centres.html</a></p>
