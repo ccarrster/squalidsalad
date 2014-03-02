@@ -97,7 +97,7 @@ require_once('safetydata.php');
 				refreshTips(selectedRoom);
 			}
 			var roomSelectElement = document.getElementById('ageSelect');
-			roomSelectElement.selectedIndex = (ageRange + 1);
+			roomSelectElement.selectedIndex = (ageRange);
 		}
 
 		function getTipsFor(age, room){
@@ -128,7 +128,7 @@ require_once('safetydata.php');
 			}
 			selectedRoom = roomId;
 			var roomSelectElement = document.getElementById('roomSelect');
-			roomSelectElement.selectedIndex = (roomId + 1);
+			roomSelectElement.selectedIndex = (roomId);
 		}
 
 		var ageNames = new Array('0-6 Months', '6-12 Months', '1-3 Years', '3-5 Years', '5+ Years');
@@ -156,9 +156,7 @@ require_once('safetydata.php');
 		function roomSelectChange(){
 			var element = document.getElementById('roomSelect');
 			var selectedIndex = element.selectedIndex;
-			if(selectedIndex != 0){
-				refreshTips(selectedIndex);
-			}
+			refreshTips(selectedIndex);
 		}
 	</script>
 <?php
