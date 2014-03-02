@@ -20,6 +20,15 @@ require_once('safetydata.php');
 		.hovery:hover{
 				border:2px solid #00ff00;
 		}
+		.fadey{
+				background: -moz-linear-gradient(top, #eeeeee 0%, #ffffff 100%);
+				background: -webkit-linear-gradient(top, #eeeeee 0%,#ffffff 100%);
+				background: -o-linear-gradient(top, #eeeeee 0%,#ffffff 100%);
+				background: -ms-linear-gradient(top, #eeeeee 0%,#ffffff 100%);
+				background: linear-gradient(top, #eeeeee 0%,#ffffff 100%);
+				width:850px;
+				margin:0px auto;
+		}
 	</style>
 
 	<script type="text/javascript">
@@ -148,39 +157,39 @@ function getPercentAgeRoom($age, $room){
 
 </head>
 <body>
-<div style="text-align:center; background-color:#eeeeee; width:850px; margin:0px auto;">
-<h1>Squalid Salad</h1>
+<div style="text-align:center;" class="fadey">
+<h1><span style="color:#663333;">Squalid</span> <span style="color:#003300;">Salad</span></h1>
 <h2>Combining age specific injuries location data with preventative advice.</h2>
 </div>
 
-<div style="width:850px; margin:0px auto; background-color:#eeeeee;">
+<div class="fadey">
 	<ol>
 		<li>Choose an age group to see how often injuries happen in each area of your home</li>
 		<li>Then choose an area of your home to get tips on how to make the area safer for the selected age group</li>
 	</ol>
 </div>
 <div style="width:850px; margin:0px auto;">
-	<div id="age0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 0);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age06.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">0-6 Months<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
-	<div id="age1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 1);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age612.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">6-12 Months<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
-	<div id="age2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 2);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age13.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">1-3 Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
-	<div id="age3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 3);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age35.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">3-5 Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
-	<div id="age4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(1, 4);"><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age5p.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">5+ Years<img alt="arrow" style="padding:2px;" src="arrow.png"></div></div>
+	<div id="age0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 0);"><div style="position:absolute; bottom:6px; right:125px;" ><img src="pillleft.png"/></div><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age06.png"><div style="position:absolute; bottom:10px; right:20px; width:105px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px;">0-6 Months</div><div style="position:absolute; bottom:6px; right:1px;" ><img src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
+	<div id="age1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 1);"><div style="position:absolute; bottom:6px; right:125px;" ><img src="pillleft.png"/></div><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age612.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">6-12 Months</div><div style="position:absolute; bottom:6px; right:1px;" ><img src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
+	<div id="age2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 2);"><div style="position:absolute; bottom:6px; right:125px;" ><img src="pillleft.png"/></div><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age13.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">1-3 Years</div><div style="position:absolute; bottom:6px; right:1px;" ><img src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
+	<div id="age3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(0, 3);"><div style="position:absolute; bottom:6px; right:125px;" ><img src="pillleft.png"/></div><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age35.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">3-5 Years</div><div style="position:absolute; bottom:6px; right:1px;" ><img src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
+	<div id="age4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshInjuryData(1, 4);"><div style="position:absolute; bottom:6px; right:125px;" ><img src="pillleft.png"/></div><img alt="a child" class="shadowy" style="width:155px; height:288px;" src="age5p.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">5+ Years</div><div style="position:absolute; bottom:6px; right:1px;" ><img src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
 </div>
 <div style="clear:both;"></div>
 
 <div style="width:850px; margin:0px auto;">
-	<div id="room0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(0);"><img alt="outside" class="shadowy" style="width:155px; height:90px;" src="outdoors.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">Outdoors<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:#dc143c; top:10px; left:10px;" id="percent3"></div></div>
-	<div id="room1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(1);"><img alt="kitchen" class="shadowy" style="width:155px; height:90px;" src="kitchen.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">Kitchen<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:#dc143c; top:10px; left:10px;" id="percent2"></div></div>
-	<div id="room2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(2);"><img alt="bedroom" class="shadowy" style="width:155px; height:90px;" src="bedroom.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">Bedroom<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:#dc143c; top:10px; left:10px;" id="percent0"></div></div>
-	<div id="room3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(3);"><img alt="bathroom" class="shadowy" style="width:155px; height:90px;" src="bathroom.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">Bathroom<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:#dc143c; top:10px; left:10px;" id="percent1"></div></div>
-	<div id="room4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(4);"><img alt="livingroom" class="shadowy" style="width:155px; height:90px;" src="livingroom.png"><div style="position:absolute; bottom:10px; right:10px; background-color:#00ff7f;">Living room<img alt="arrow" style="padding:2px;" src="arrow.png"></div><div style="position:absolute; background-color:#dc143c; top:10px; left:10px;" id="percent4"></div></div>
+	<div id="room0" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(0);"><div style="position:absolute; bottom:6px; right:125px;" ><img src="pillleft.png"/></div><img alt="outside" class="shadowy" style="width:155px; height:90px;" src="outdoors.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">Outdoors</div><div style="position:absolute; color:#ffffff; background-color:#663333; top:10px; left:10px;" id="percent3"></div><div style="position:absolute; bottom:6px; right:1px;" ><img src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
+	<div id="room1" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(1);"><div style="position:absolute; bottom:6px; right:125px;" ><img src="pillleft.png"/></div><img alt="kitchen" class="shadowy" style="width:155px; height:90px;" src="kitchen.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">Kitchen</div><div style="position:absolute; color:#ffffff; background-color:#663333; top:10px; left:10px;" id="percent2"></div><div style="position:absolute; bottom:6px; right:1px;" ><img src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
+	<div id="room2" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(2);"><div style="position:absolute; bottom:6px; right:125px;" ><img src="pillleft.png"/></div><img alt="bedroom" class="shadowy" style="width:155px; height:90px;" src="bedroom.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">Bedroom</div><div style="position:absolute; color:#ffffff; background-color:#663333; top:10px; left:10px;" id="percent0"></div><div style="position:absolute; bottom:6px; right:1px;" ><img src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
+	<div id="room3" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(3);"><div style="position:absolute; bottom:6px; right:125px;" ><img src="pillleft.png"/></div><img alt="bathroom" class="shadowy" style="width:155px; height:90px;" src="bathroom.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">Bathroom</div><div style="position:absolute; color:#ffffff; background-color:#663333; top:10px; left:10px;" id="percent1"></div><div style="position:absolute; bottom:6px; right:1px;" ><img src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
+	<div id="room4" class="hovery" style="cursor:pointer; float:left; position:relative; padding:5px;" onclick="refreshTips(4);"><div style="position:absolute; bottom:6px; right:125px;" ><img src="pillleft.png"/></div><img alt="livingroom" class="shadowy" style="width:155px; height:90px;" src="livingroom.png"><div style="position:absolute; bottom:10px; right:20px; color:#ffffff; background-color:#003300; vertical-align: middle; line-height:28px; width:105px;">Living room</div><div style="position:absolute; color:#ffffff; background-color:#663333; top:10px; left:10px;" id="percent4"></div><div style="position:absolute; bottom:6px; right:1px;" ><img src="pillright.png"/></div><div style="position:absolute; bottom:10px; right:15px;" ><img alt="arrow" src="arrow.png"></div></div>
 </div>
 <div style="clear:both;"></div>
-<div style="width:850px; margin:0px auto; background-color:#eeeeee;">
+<div class="fadey">
 <h2 style="text-align:center">Safety Tips <span id="ageTips"></span></h2>
 </div>
-<div style="width:850px; margin:0px auto; background-color:#eeeeee;" id="tips"></div>
-<div style="width:850px; margin:0px auto; background-color:#eeeeee;">
+<div class="fadey" id="tips"></div>
+<div class="fadey">
 	<p>If there is a current emergency call 911.</p>
 	<p>Contact registered nurses via telephone. <a href="http://www.cwhn.ca/en/yourhealth/provincialhealthlines">http://www.cwhn.ca/en/yourhealth/provincialhealthlines</a></p>
 	<p>Poison Control centres. <a href="http://www.safemedicationuse.ca/tools_resources/poison_centres.html">http://www.safemedicationuse.ca/tools_resources/poison_centres.html</a></p>
