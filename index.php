@@ -184,10 +184,16 @@ function getPercentAgeRoom($age, $room){
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=266776246763500";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div style="text-align:center;" class="fadey">
-<h1><span style="color:#663333;">Squalid</span> <span style="color:#003300;">Salad</span></h1>
-<h2>Making your home safer.</h2>
+<div style="background-color:#000000; height:61px;">
+	<div style="float:left;">
+		<img style="padding:8px;" src="code_logo.png">
+	</div>
+	<div style="float:left; background-color:#eeeeee; padding:6px; margin:6px;">
+		<span style="color:#663333; font-size:32px;">Squalid</span> <span style="color:#003300; font-size:32px;">Salad</span> Making your home safer.
+	</div>
+	<div style="clear:both;"></div>
 </div>
+
 
 <div class="fadey" style="line-height: 18px;">
 	<ol>
